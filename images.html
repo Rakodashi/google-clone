@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-      <title>search</title>
+      <title>Images</title>
     </head>
     <body>
         <div class="container-fluid">
@@ -15,33 +15,105 @@
                     <a class="nav-link text-dark" href="https://www.google.com/gmail/">Gmail</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-dark" href="https://www.google.com.br/imghp">Images</a>
+                    <a class="nav-link text-dark" href="./index.html">Search</a>
                 <li>
 
                   <li class="nav-item dropdown-center">
                     <button class="btn btn-light ms-0 me-3 rounded-circle" data-bs-toggle="dropdown" data-toggle="dropdown" href="#">
-                      <img src="./transp_login_form/img/apps.svg" class="" width="32" height="32">
+                      <img src="./img/apps.svg" class="" width="32" height="32">
                     </button>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="#">Separated link</a></li>
+
+                    <div class="dropdown-menu" data-bs-toggle="dropdown">
+                      
+                    <ul class="list-unstyled d-flex justify-content-evenly">
+
+                      <li class="flex-column">
+                        <a class="dropdown-item" href="https://www.google.com/account/about/">
+                        <img src="./img/icons8-male-user-48.png" alt="">
+                        <p class="text-center">Account</p>
+                      </a>
+                    </li>
+
+                      <li class="flex-column">
+                        <a class="dropdown-item" href="https://www.google.com/drive/">
+                          <img src="./img/icons8-google-drive.svg" alt="">
+                          <p class="text-center">Drive</p>
+                        </a>
+                      </li>
+
+                      <li class="flex-column">
+                        <a class="dropdown-item" href="https://www.google.com/gmail/about/">
+                          <img src="./img/icons8-gmail.svg" alt="">
+                          <p class="text-center">Gmail</p>
+                        </a>
+                      </li>
                       </ul>
+
+                      <ul class="list-unstyled d-flex justify-content-evenly">
+                        <li><hr class="dropdown-divider"></li>
+                      </ul>
+
+                      <ul class="list-unstyled d-flex justify-content-evenly">
+
+                        <li class="flex-column">
+                          <a class="dropdown-item" href="https://books.google.com">
+                            <img src="./img/icons8-google-books.svg" alt="">
+                            <p class="text-center">Books</p>
+                          </a>
+                        </li>
+
+                            <li class="flex-column">
+                              <a class="dropdown-item" href="https://www.blogger.com/about/?bpli=1">
+                                <img src="./img/icons8-blogger.svg" alt="">
+                                <p class="text-center">Blogger</p>
+                              </a>
+                            </li>
+
+                            <li class="flex-column">
+                              <a class="dropdown-item" href="https://contacts.google.com">
+                                <img src="./img/icons8-google-contacts.svg" alt="">
+                                <p class="text-center">Contacts</p>
+                              </a>
+                            </li>
+                      </ul>
+
+                      <ul class="list-unstyled d-flex justify-content-start">
+
+                        <li>
+                          <a class="dropdown-item" href="https://chrome.google.com/webstore/category/extensions?utm_source=app-launcher">
+                            <img src="./img/icons8-chrome-web-store.svg" alt="">
+                            <p class="text-center">Chrome Web Store</p>
+                          </a>
+                        </li>
+                      </ul>
+
+                      <ul class="list-unstyled d-flex justify-content-center">
+
+                        <li>
+                          <a class="dropdown-item btn btn-light text-center" href="https://about.google/products/">More from Google</a>
+                        </li>
+                      </ul>
+                      
+                    </div>
               </li>
 
-                <li class="nav-item">
-                    <a class="btn btn-primary" href="https://accounts.google.com/ServiceLogin" role="button">Sign In</a>
-                </li>
+              <li class="nav-item">
+                <a class="btn btn-primary" href="./login.html" role="button">Sign In</a>
+            </li>
             </ul>
-            <div class="text-center" id="query">
-                <img alt="profile img" class="img-fluid w-25" src="https://avatars.githubusercontent.com/u/90228851?v=4">
-                <form action="https://www.google.com/search" class="mt-4" method="get">
-                    <input autocomplete="off" autofocus class="form-control form-control-lg mb-4 mx-auto w-50 rounded-pill" name="q" placeholder="Query" type="search">
-                    <button class="btn btn-light rounded-circle" type="submit"><i class="bi bi-search"></i></button>
-                    
-                </form>
+            <div class="text-center">
+              <img alt="profile img" class="img-fluid w-35" src="https://avatars.githubusercontent.com/u/90228851?v=4">
+              <form action="http://images.google.com/images" class="mt-4" method="get">
+                  <input autocomplete="off" autofocus class="form-control form-control-lg mb-4 mx-auto w-50 rounded-pill" name="q" placeholder="Query" type="search">
+                  <button class="btn btn-light me-1" type="submit">Image Search</button>
+              </form>
+              <div class="advanced mt-3">For Advanced Search: <a href="advanced.html" class="text-decoration-none">Click here</a></div>
+
+                    <!-- <div class="input-group">
+                      <input type="search" autocomplete="off" autofocus class="form-control form-control-lg mb-4 mx-auto w-50 rounded-pill" placeholder="Images" aria-label="Input group example" aria-describedby="btnGroupAddon" name="q">
+                      <button class="input-group-text" type="submit" id="btnGroupAddon"><i class="bi bi-search"></i></button>
+                    </div>
+                  </div> -->
         </div>
     </body>
 

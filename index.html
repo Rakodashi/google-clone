@@ -29,7 +29,9 @@
                         <button class="btn btn-light ms-0 me-3 rounded-circle" data-bs-toggle="dropdown" data-toggle="dropdown" href="#">
                           <img src="./img/apps.svg" class="" width="32" height="32">
                         </button>
-                        <ul class="dropdown-menu">
+
+                        <ul class="dropdown-menu" data-bs-toggle="dropdown">
+                            
                             <li><a class="dropdown-item" href="https://www.google.com/account/about/"><img src="./img/icons8-male-user-48.png" alt=""> Account</a></li>
 
                             <li><a class="dropdown-item" href="https://www.google.com/drive/"><img src="./img/icons8-google-drive.svg" alt=""> Drive</a></li>
@@ -96,11 +98,11 @@
                 </li>
             </ul>
             <div class="text-center">
-                <img alt="profile img" class="img-fluid w-25" src="https://avatars.githubusercontent.com/u/90228851?v=4">
+                <img alt="profile img" class="img-fluid w-35" src="https://avatars.githubusercontent.com/u/90228851?v=4">
                 <form action="https://www.google.com/search" class="mt-4" method="get">
                     <input autocomplete="off" autofocus class="form-control form-control-lg mb-4 mx-auto w-50 rounded-pill" name="q" placeholder="Query" type="search">
                     <button class="btn btn-light me-1" type="submit">Google Search</button>
-                    <button class="btn btn-light ms-1" name="btnI" type="submit">I'm Feeling Lucky</button>
+                    <button class="btn btn-light ms-1" name="btnI" type="submit" formaction="https://google.com/search?&btnI=1">I'm Feeling Lucky</button>
                 </form>
                 <div class="advanced mt-3">For Advanced Search: <a href="advanced.html" class="text-decoration-none">Click here</a></div>
             </div>
