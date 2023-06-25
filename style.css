@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+    /* border: red 1px solid; */
 }
 
 
@@ -23,6 +25,12 @@ td {
 .searchbar{
     width: 400px;
     margin: 8px ;
+}
+
+.scrollable-menu {
+    height: auto;
+    max-height: 27rem;
+    overflow-x: hidden;
 }
 
 @media screen and (max-width:600px){
