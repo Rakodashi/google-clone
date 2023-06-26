@@ -2,15 +2,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
-    /* border: red 1px solid; */
 }
-
-
 .mt-1 {
     margin-top: 0 !important;
 }
-
 body {
     background-size: cover;
     font-family: sans-serif;
@@ -21,42 +16,15 @@ td {
 .mono {
     font-family: monospace;
 }
-
 .searchbar{
     width: 400px;
     margin: 8px ;
 }
-
 .scrollable-menu {
     height: auto;
     max-height: 27rem;
     overflow-x: hidden;
 }
-
-@media screen and (max-width:600px){
-    .desc{
-        visibility: hidden;
-    }
-    .des1{
-        width: 50px;
-    }
-    .searchbar{
-        width: 200px;
-        margin-left: 50px;
-    }
-}
-/* .dropdown-menu, .dropdown-menu.show {
-    display: flex !important;
-    max-height: 60vh;
-    overflow-y: scroll;
-    align-items: center;
-    justify-content: space-evenly;
-}
-.dropdown-menu .show {
-    color: red;
-    background: blue;
-} */
-
 .login-wrapper {
     height: 100vh;
     width: 100vw;
@@ -192,4 +160,16 @@ td {
     font-weight: 900;
     text-decoration: none;
     color: inherit;
+}
+@media screen and (max-width:600px){
+    .desc{
+        visibility: hidden;
+    }
+    .des1{
+        width: 50px;
+    }
+    .searchbar{
+        width: 200px;
+        margin-left: 50px;
+    }
 }
